@@ -1,0 +1,82 @@
+
+* {
+  box-sizing: border-box;
+}
+.App{
+  margin: 0;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  /* background: #ccc; */
+  width: 100%;
+  height : 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.container .left-container{
+  /* background: rgba(170, 170, 204, 0.2); */
+}
+.container .left-container>span{
+  display: block;
+  width: 100%;
+  height: 5%;
+  padding: 2% 0;
+    /* line-height: 200%; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 2vw;
+  color: rgb(75, 204, 214);
+}
+
+.container .left-container .patient-info-container{
+  width: 100%;
+  height: 95%;
+  /* background: #ccc; */
+  padding: 5%;
+  border-radius: 5px;
+  border: #ccc 1px solid;
+}
+.container .left-container .patient-info-container>span{
+  display: block;
+  color: rgb(75, 117, 214);
+  font-size: 2vh;
+  font-weight: bold;
+  margin-bottom: 3vh;
+  padding-bottom: 2vh;
+  border-bottom: 1px #ccc solid;
+}
+.patient-info .title{
+  font-size: 1vw;
+}
+.patient-info .content{
+  font-size: 1.5vw;
+  margin-bottom: 3vh;
+  font-weight: 500;
+}
+
+
+
+.container .right-container{
+  background: rgba(204, 170, 170, 0.3);
+}
+
+.top{
+  background: gold;
+  height: 5%;
+}
+.button-container{
+  height: 5%;
+  background: skyblue;
+}
+.graph-container{
+  height: 50%;
+  background: yellowgreen;
+}
+.history-container{
+  height: 40%;
+  background: pink;
+}
