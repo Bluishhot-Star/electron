@@ -1,0 +1,219 @@
+
+* {
+  box-sizing: border-box;
+}
+.App{
+  background: #fff;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+  /* background: #ccc; */
+  width: 100%;
+  height : 100%;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 40px 1fr;
+  grid-column-gap: 10px;
+}
+.nav{
+  grid-column: 1/-1;
+  width: 100%;
+  height: 40px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 150px 1fr;
+  /* background: #ccc; */
+}
+.container .nav .nav-logo{
+  width: 150px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid #ccc;
+}
+.container .nav .nav-logo h1{
+  all: unset;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: rgb(75, 204, 214);
+  transform: translate(0, -5px);
+}
+
+.nav-content-container{
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-left-container{
+  /* width: ; */
+  display: flex;
+}
+.nav-right-container{
+  display: flex;
+}
+.nav-left-container .admin{
+  margin-left: 10px;
+  font-size: 0.7rem;
+}
+.nav-left-container .admin span:last-child{
+  margin-left: 5px;
+  color: rgb(44, 192, 202);
+}
+.nav-right-container button{
+  all: unset;
+  font-size: 0.8rem;
+}
+.nav-right-container .select-patient-btn{
+  margin-right: 10px;
+}
+.nav-right-container .setting-btn{
+  color: rgb(44, 192, 202);
+}
+
+
+
+.container .left-container{
+  position: relative;
+  width: 150px;
+}
+
+
+.container .left-container .patient-info-container{
+  width: 100%;
+  height: -webkit-fill-available;
+  /* background: #ccc; */
+  padding: 5%;
+  border-radius: 5px;
+  border: #ccc 1px solid;
+  position: absolute;
+  overflow: scroll;
+}
+.container .left-container .patient-info-container>span{
+  display: block;
+  color: rgb(75, 117, 214);
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom: 1px #ccc solid;
+}
+.patient-info{
+  position: absolute;
+  margin-top: 10px;
+}
+.patient-info .title{
+  font-size: 0.7rem;
+}
+.patient-info .content{
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.patient-info .content:last-child{
+  margin-bottom: 50px;
+}
+.patient-info-container .button-container{
+  background: none;
+  height: 30px;
+}
+
+.patient-info-container button{
+  all:unset;
+  width: 125px;
+  height: 25px;
+  border-radius: 50px;
+  border: #333 1px solid;
+  font-size: 0.8rem;
+  text-align: center;
+
+  background: #fff;
+  bottom: 30px;
+  left: 30px;
+  position: fixed;
+}
+.container .right-container{
+  width: 100%;
+  display: grid;
+  grid-template-rows: 40px 10fr 8fr;
+}
+
+.button-container{
+  /* height: 5%; */
+  /* background: skyblue; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.button-container button{
+  all: unset;
+  width: 100px;
+  height: 25px;
+  border: #333 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0 10px;
+  /* margin-left: 20px; */
+}
+/* .two-btn-container{
+  display: flex;
+} */
+.button-container .detail-btn{
+  position: absolute;
+  display: block;
+  right: 0px;
+  margin: 0;
+  border: rgb(34, 110, 177) 1px solid;
+  color: rgb(34, 110, 177);
+}
+
+
+.graph-container{
+  /* height: 50%; */
+  /* background: yellowgreen; */
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+}
+.graph-container .graph{
+  /* background: #000; */
+  width: 100%;
+  border-radius: 7px;
+  border: #ccc 1px solid;
+}
+
+.history-container{
+  /* height: 40%; */
+  /* background: pink; */
+  border-radius: 7px;
+  border: #ccc 1px solid;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding: 0 10px;
+}
+.history-container .slider{
+  display:flex;
+  width: calc(300px * 12);
+  align-items: center;
+}
+.history-container  .slider div{
+  width: 30vh;
+  height: 30vh;
+  border: #ccc 1px solid;
+  margin-right: 10px;
+}
+
+
+
+button:active{
+  opacity: 0.3;
+  /* background: #000; */
+}
